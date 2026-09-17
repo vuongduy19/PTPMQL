@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vuong\\OneDrive\\Documents\\mvc\\NewApp\\NewApp.csproj": {}
+    "C:\\Users\\vuong\\OneDrive\\Documents\\NET_CORE_API\\NewApp\\NewApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vuong\\OneDrive\\Documents\\mvc\\NewApp\\NewApp.csproj": {
+    "C:\\Users\\vuong\\OneDrive\\Documents\\NET_CORE_API\\NewApp\\NewApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vuong\\OneDrive\\Documents\\mvc\\NewApp\\NewApp.csproj",
+        "projectUniqueName": "C:\\Users\\vuong\\OneDrive\\Documents\\NET_CORE_API\\NewApp\\NewApp.csproj",
         "projectName": "NewApp",
-        "projectPath": "C:\\Users\\vuong\\OneDrive\\Documents\\mvc\\NewApp\\NewApp.csproj",
+        "projectPath": "C:\\Users\\vuong\\OneDrive\\Documents\\NET_CORE_API\\NewApp\\NewApp.csproj",
         "packagesPath": "C:\\Users\\vuong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vuong\\OneDrive\\Documents\\mvc\\NewApp\\obj\\",
+        "outputPath": "C:\\Users\\vuong\\OneDrive\\Documents\\NET_CORE_API\\NewApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vuong\\AppData\\Roaming\\NuGet\\NuGet.Config"
