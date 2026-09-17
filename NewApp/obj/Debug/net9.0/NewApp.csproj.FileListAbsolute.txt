@@ -1,0 +1,15 @@
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\bin\Debug\net9.0\NewApp.exe
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\bin\Debug\net9.0\NewApp.deps.json
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\bin\Debug\net9.0\NewApp.runtimeconfig.json
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\bin\Debug\net9.0\NewApp.dll
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\bin\Debug\net9.0\NewApp.pdb
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfoInputs.cache
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.AssemblyInfo.cs
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.csproj.CoreCompileInputs.cache
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.sourcelink.json
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.dll
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\refint\NewApp.dll
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.pdb
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\NewApp.genruntimeconfig.cache
+C:\Users\vuong\OneDrive - Hanoi University of Mining and Geology\Documents\PTPMQL\NewApp\obj\Debug\net9.0\ref\NewApp.dll

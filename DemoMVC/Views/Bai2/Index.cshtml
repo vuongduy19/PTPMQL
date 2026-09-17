@@ -1,0 +1,21 @@
+@model DemoMVC.Models.Bai2
+
+<form asp-action="Index" method="post">
+    <label>Số thứ nhất:</label>
+    <input asp-for="Number1" />
+
+    <label>Số thứ hai:</label>
+    <input asp-for="Number2" />
+
+    <label>Chọn phép toán:</label>
+    <select asp-for="Operation">
+        <option value="Add">Tổng</option>
+        <option value="Sub">Hiệu</option>
+        <option value="Mul">Tích</option>
+        <option value="Div">Thương</option>
+    </select>
+
+    <input type="submit" value="Tính" />
+</form>
+
+<h1>@ViewBag.Result</h1>

@@ -1,0 +1,28 @@
+@model DemoMVC.Models.Bai3
+
+@{
+    ViewData["Title"] = "Bài 3 - Tính chỉ số BMI";
+}
+
+<h2>Bài 3: Tính chỉ số BMI</h2>
+
+<form asp-action="bmi" method="post">
+    <div>
+        <label>Cân nặng (kg):</label>
+        <input type="number" step="any" name="Weight" value="@Model?.Weight" required />
+    </div>
+
+    <div>
+        <label>Chiều cao (m):</label>
+        <input type="number" step="any" name="Height" value="@Model?.Height" required />
+    </div>
+
+    <button type="submit">Tính BMI</button>
+</form>
+
+@if (ViewBag.BMI != null)
+{
+    <h3>Kết quả:</h3>
+    <p>BMI = <b>@ViewBag.BMI</b></p>
+    <p>Tình trạng: <b>@ViewBag.Status</b></p>
+}
