@@ -1,0 +1,38 @@
+
+@model DemoMVC.Models.SinhVien
+
+@{
+    ViewData["Title"] = "Chi tiết sinh viên";
+}
+
+<h1>Chi tiết sinh viên</h1>
+
+<hr />
+
+<dl class="row">
+    <dt class="col-sm-3">Mã sinh viên</dt>
+    <dd class="col-sm-9">@Model.MaSV</dd>
+
+    <dt class="col-sm-3">Họ tên</dt>
+    <dd class="col-sm-9">@Model.HoTen</dd>
+
+    <dt class="col-sm-3">Ngày sinh</dt>
+    <dd class="col-sm-9">
+        @(Model.NgaySinh?.ToString("dd/MM/yyyy") ?? "")
+    </dd>
+
+    <dt class="col-sm-3">Mã khoa</dt>
+    <dd class="col-sm-9">@Model.MaKhoa</dd>
+
+    <dt class="col-sm-3">Tên khoa</dt>
+    <dd class="col-sm-9">
+        @(Model.Khoa?.TenKhoa ?? "Chưa có khoa")
+    </dd>
+</dl>
+
+<a asp-action="Edit" asp-route-id="@Model.MaSV"
+   class="btn btn-warning">Sửa</a>
+
+<a asp-action="Index" class="btn btn-secondary">
+    Quay lại
+</a>

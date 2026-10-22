@@ -1,0 +1,90 @@
+
+@model DemoMVC.Models.SinhVien
+
+@{
+    ViewData["Title"] = "Thêm sinh viên";
+}
+
+<h1>Thêm sinh viên</h1>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly"
+                 class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="HoTen" class="form-label"></label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NgaySinh" class="form-label"></label>
+                <input asp-for="NgaySinh" type="date"
+                       class="form-control" />
+                <span asp-validation-for="NgaySinh"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MaKhoa" class="form-label"></label>
+                <select asp-for="MaKhoa"
+                        asp-items="ViewBag.MaKhoa"
+                        class="form-select">
+                    <option value="">-- Chọn khoa --</option>
+                </select>
+                <span asp-validation-for="MaKhoa"
+                      class="text-danger"></span>
+            </div>
+
+            <hr />
+            <h5>Thông tin tạo mã sinh viên</h5>
+
+            <div class="mb-3">
+                <label asp-for="NamNhapHoc" class="form-label"></label>
+                <input asp-for="NamNhapHoc" type="number"
+                       class="form-control" min="2000" max="2099" />
+                <span asp-validation-for="NamNhapHoc"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MaHeDaoTao" class="form-label"></label>
+                <input asp-for="MaHeDaoTao" class="form-control"
+                       maxlength="2" />
+                <span asp-validation-for="MaHeDaoTao"
+                      class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="MaNganh" class="form-label"></label>
+                <input asp-for="MaNganh" class="form-control"
+                       maxlength="2" />
+                <span asp-validation-for="MaNganh"
+                      class="text-danger"></span>
+            </div>
+
+            <p class="text-muted">
+                Mã sinh viên sẽ được tạo tự động khi bạn bấm Lưu.
+            </p>
+
+            <button type="submit" class="btn btn-primary">
+                Lưu
+            </button>
+
+            <a asp-action="Index" class="btn btn-secondary">
+                Quay lại
+            </a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

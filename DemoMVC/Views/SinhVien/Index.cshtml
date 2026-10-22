@@ -1,0 +1,54 @@
+
+@model IEnumerable<DemoMVC.Models.SinhVien>
+
+@{
+    ViewData["Title"] = "Danh sách sinh viên";
+}
+
+<h1>Danh sách sinh viên</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">
+        Thêm sinh viên
+    </a>
+</p>
+
+@if (TempData["Success"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Success"]
+    </div>
+}
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Mã sinh viên</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Khoa</th>
+            <th>Chức năng</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.MaSV</td>
+            <td>@item.HoTen</td>
+            <td>
+                @(item.NgaySinh?.ToString("dd/MM/yyyy") ?? "")
+            </td>
+            <td>@(item.Khoa?.TenKhoa ?? "Chưa có khoa")</td>
+            <td>
+                <a asp-action="Details"
+                   asp-route-id="@item.MaSV">Chi tiết</a> |
+                <a asp-action="Edit"
+                   asp-route-id="@item.MaSV">Sửa</a> |
+                <a asp-action="Delete"
+                   asp-route-id="@item.MaSV">Xóa</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
